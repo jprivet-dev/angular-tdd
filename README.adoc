@@ -42,7 +42,68 @@ image:https://img.shields.io/github/license/jprivet-dev/angular-tdd[GitHub]
 
 toc::[]
 
-== Mémo
+== L'installation (mémento)
+
+=== Installer Node.js et NPM (Linux)
+
+Voir https://medium.com/@shivraj.jadhav82/nodejs-and-npm-setup-on-linux-mint-19-696023d50247.
+
+Vérifier les versions :
+
+```sh
+$ npm -v
+$ node -v
+```
+
+Installer Node.js et NPM :
+
+```sh
+$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
+
+=== Mettre à jour NPM
+
+```sh
+$ npm install npm@latest -g
+```
+
+=== Installer Angular CLI
+
+```sh
+$ npm install -g @angular/cli
+$ ng --version
+```
+
+=== Installer Yarn (Linux)
+
+```sh
+$ curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+$ sudo apt-get update && sudo apt-get install yarn
+$ yarn -v
+```
+
+=== Créer un projet (à la racine)
+
+```sh
+$ ng new app --prefix app --defaults --directory ./
+$ ng serve
+```
+
+=== ES Lint
+
+```sh
+$ npm install eslint -g
+```
+
+== Configuration
+
+=== Activer le SCSS
+
+```sh
+$ ng config schematics.@nrwl/schematics:component.styleext scss
+```
 
 {BACK_TO_TOP}
 
