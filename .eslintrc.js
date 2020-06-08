@@ -259,7 +259,6 @@ module.exports = {
         "no-empty": "off",
         "no-empty-function": "off",
         "no-eval": "error",
-        "no-extra-semi": "off",
         "no-fallthrough": "error",
         "no-invalid-this": "off",
         "no-new-wrappers": "error",
