@@ -124,6 +124,14 @@ image::doc/img/phpstorm-settings-prettier.png[]
 
 {BACK_TO_TOP}
 
+=== Installer ESLint
+
+Voir https://medium.com/create-code/migrate-angular-8-from-tslint-to-eslint-4b0c44c8ae38 :
+
+```sh
+$ npm i -D eslint @typescript-eslint/{eslint-plugin,parser,eslint-plugin-tslint}
+```
+
 == Ressources & Inspiration
 
 === Badges
