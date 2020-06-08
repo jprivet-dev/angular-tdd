@@ -91,6 +91,8 @@ $ ng new app --prefix app --defaults --directory ./
 $ ng serve
 ```
 
+CAUTION: Si vous souhaitez créer un projet à la racine, il ne faut pas qu'un fichier README.md y existe déjà, sinon vous aurez le message d'erreur suivant : `ERROR! README.md already exists.`
+
 === ES Lint
 
 ```sh
