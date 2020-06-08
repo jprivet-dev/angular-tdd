@@ -132,6 +132,8 @@ Voir https://medium.com/create-code/migrate-angular-8-from-tslint-to-eslint-4b0c
 $ npm i -D eslint @typescript-eslint/{eslint-plugin,parser,eslint-plugin-tslint}
 ```
 
+Installer ensuite les modules indiqués après `... new packages are required for this ESLint configuration.`.
+
 == Ressources & Inspiration
 
 === Badges
