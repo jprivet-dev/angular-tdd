@@ -86,26 +86,41 @@ $ yarn -v
 
 === Créer un projet (à la racine)
 
+Générez votre projet :
+
 ```sh
 $ ng new app --prefix app --defaults --directory ./
+```
+
+Et lancez le serveur dans la foulée :
+
+```sh
 $ ng serve
 ```
 
-CAUTION: Si vous souhaitez créer un projet à la racine, il ne faut pas qu'un fichier README.md y existe déjà, sinon vous aurez le message d'erreur suivant : `ERROR! README.md already exists.`
+Puis allez sur http://localhost:4200/
 
-=== ES Lint
+CAUTION: Si vous souhaitez créer un projet à la racine, il ne faut pas qu'un fichier `README.md` y existe déjà, sinon vous aurez le message d'erreur suivant : `ERROR! README.md already exists.`
+
+=== TSLint & ESLint
+
+Voir *Roadmap: TSLint -> ESLint* (https://github.com/palantir/tslint/issues/4534)
 
 ```sh
 $ npm install eslint -g
 ```
 
-== Configuration
+=== Install and configure Prettier in PhpStorm
 
-=== Activer le SCSS
+Voir https://www.jetbrains.com/help/phpstorm/prettier.html :
 
 ```sh
-$ ng config schematics.@nrwl/schematics:component.styleext scss
+$ npm install --save-dev --save-exact prettier
 ```
+
+Configurer :
+
+image::doc/img/phpstorm-settings-prettier.png[]
 
 {BACK_TO_TOP}
 
