@@ -1,1 +1,61 @@
-# unit-and-functional-tests-angular
+// settings:
+
+:toc: macro
+:toc-title: Sommaire
+:toclevels: 2
+:numbered:
+:sectnumlevels: 2
+
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+:status:
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+// variables:
+
+:uri-org: https://github.com/jprivet-dev
+:uri-repo: {uri-org}/angular-tdd
+
+:uri-rel-file-base: link:
+:uri-rel-tree-base: link:
+ifdef::env-site,env-yard[]
+:uri-rel-file-base: {uri-repo}/blob/master/
+:uri-rel-tree-base: {uri-repo}/tree/master/
+endif::[]
+
+:uri-license: {uri-rel-file-base}LICENSE
+
+:BACK_TO_TOP_TARGET: top-target
+:BACK_TO_TOP_LABEL: ⬆ Retour au sommaire
+:BACK_TO_TOP: <<{BACK_TO_TOP_TARGET},{BACK_TO_TOP_LABEL}>>
+
+[#{BACK_TO_TOP_TARGET}]
+= Angular 9 & TDD
+
+image:https://img.shields.io/github/license/jprivet-dev/angular-tdd[GitHub]
+
+toc::[]
+
+== Mémo
+
+{BACK_TO_TOP}
+
+== Ressources & Inspiration
+
+=== Badges
+
+* https://shields.io/
+
+{BACK_TO_TOP}
+
+== Licence
+
+{uri-repo} est publié sous {uri-license}[licence MIT].
+
+{BACK_TO_TOP}
