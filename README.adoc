@@ -107,7 +107,7 @@ CAUTION: Si vous souhaitez créer un projet à la racine, il ne faut pas qu'un f
 ==== Installation
 
 ```sh
-$ yarn add --dev eslint eslint-config-google @typescript-eslint/{eslint-plugin,parser}
+$ yarn add --dev eslint eslint-config-google @typescript-eslint/parser
 ```
 
 ==== PHPStorm : configuration
