@@ -1,0 +1,197 @@
+// settings:
+
+:toc: macro
+:toc-title: Sommaire
+:toclevels: 2
+:numbered:
+:sectnumlevels: 2
+
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+:status:
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+// variables:
+
+:uri-org: https://github.com/jprivet-dev
+:uri-repo: {uri-org}/angular-tdd
+
+:uri-rel-file-base: link:
+:uri-rel-tree-base: link:
+ifdef::env-site,env-yard[]
+:uri-rel-file-base: {uri-repo}/blob/master/
+:uri-rel-tree-base: {uri-repo}/tree/master/
+endif::[]
+
+:uri-license: {uri-rel-file-base}LICENSE
+
+:BACK_TO_TOP_TARGET: top-target
+:BACK_TO_TOP_LABEL: ⬆ Retour au sommaire
+:BACK_TO_TOP: <<{BACK_TO_TOP_TARGET},{BACK_TO_TOP_LABEL}>>
+
+[#{BACK_TO_TOP_TARGET}]
+= Angular 9 & TDD
+
+image:https://img.shields.io/github/license/jprivet-dev/angular-tdd[GitHub]
+
+toc::[]
+
+== Présentation
+
+Ce projet *Angular TDD* est un atelier où je concentre, teste et partage des cas pratiques (projets clients, R&D, ...)
+autour des *tests automatiques*, du *TDD* (Test-Driven Development) et du framework *Angular*.
+
+*Les titres de la doc sont tagués* de la façon suivante :
+
+. [ ] A faire
+. [!] En cours
+. [x] Fait
+
+{BACK_TO_TOP}
+
+== Installations & Déploiement (mémento)
+
+=== Installer Node.js et NPM (Linux)
+
+Vérifier les versions :
+
+```sh
+$ npm -v
+$ node -v
+```
+
+Installer Node.js et NPM :
+
+```sh
+$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
+
+{BACK_TO_TOP}
+
+=== Mettre à jour NPM
+
+```sh
+$ npm install npm@latest -g
+```
+
+{BACK_TO_TOP}
+
+=== Installer Angular CLI
+
+```sh
+$ npm install -g @angular/cli
+$ ng --version
+```
+
+{BACK_TO_TOP}
+
+=== Installer Yarn (Linux)
+
+```sh
+$ curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+$ sudo apt-get update && sudo apt-get install yarn
+$ yarn -v
+```
+
+{BACK_TO_TOP}
+
+=== Créer un projet Angular (à la racine)
+
+Générer son projet : +
+`$ ng new app --prefix app --defaults --directory ./`
+
+Lancer le serveur : +
+`$ ng serve`
+
+Puis aller sur http://localhost:4200/
+
+CAUTION: Si l'on souhaite créer un projet à la racine, il ne faut pas qu'un fichier `README.md` existe déjà, sinon le message d'erreur suivant s'affiche : `ERROR! README.md already exists.`
+
+{BACK_TO_TOP}
+
+=== Linter & ESLint
+
+==== Installer ESLint
+
+```sh
+$ yarn add --dev eslint eslint-config-google @typescript-eslint/parser
+```
+
+{BACK_TO_TOP}
+
+==== Configurer PHPStorm
+
+image::doc/img/phpstorm-settings-eslint.png[]
+
+{BACK_TO_TOP}
+
+=== Deployer sur GitHub Page
+
+==== Créer un branche `gh-pages`
+
+```sh
+$ git checkout --orphan gh-pages
+$ git rm -rf .
+$ git commit --allow-empty -m "empty"
+$ git push origin gh-pages
+```
+
+{BACK_TO_TOP}
+
+==== Installer `angular-cli-ghpages`
+
+```sh
+$ yarn add --dev angular-cli-ghpages
+$ ng add angular-cli-ghpages
+```
+
+{BACK_TO_TOP}
+
+==== Déployer sur la branche `gh-pages` sur GitHub Pages
+
+```sh
+$ ng deploy --base-href=/angular-tdd/
+```
+
+{BACK_TO_TOP}
+
+== Ressources & Inspiration
+
+=== Node & NPM
+
+* https://medium.com/@shivraj.jadhav82/nodejs-and-npm-setup-on-linux-mint-19-696023d50247
+
+=== Yarn
+
+* https://classic.yarnpkg.com/en/docs/install#debian-stable
+
+=== TSLint & ESLint
+
+* *Roadmap: TSLint -> ESLint* : https://github.com/palantir/tslint/issues/4534
+* https://medium.com/create-code/migrate-angular-8-from-tslint-to-eslint-4b0c44c8ae38
+* https://github.com/google/eslint-config-google
+
+=== Deploiement
+
+* https://github.com/angular-schule/angular-cli-ghpages
+* https://www.npmjs.com/package/angular-cli-ghpages
+
+=== Badges
+
+* https://shields.io/
+
+{BACK_TO_TOP}
+
+== Licence
+
+{uri-repo} est publié sous {uri-license}[licence MIT].
+
+{BACK_TO_TOP}
