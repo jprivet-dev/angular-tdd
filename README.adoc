@@ -110,33 +110,17 @@ Voir *Roadmap: TSLint -> ESLint* (https://github.com/palantir/tslint/issues/4534
 $ npm install eslint -g
 ```
 
-=== Install and configure Prettier in PhpStorm
-
-Voir https://www.jetbrains.com/help/phpstorm/prettier.html :
-
-```sh
-$ npm install --save-dev --save-exact prettier
-```
-
-Configurer :
-
-image::doc/img/phpstorm-settings-prettier.png[]
-
-{BACK_TO_TOP}
-
 === Installer ESLint
 
 Voir https://medium.com/create-code/migrate-angular-8-from-tslint-to-eslint-4b0c44c8ae38 :
+Voir aussi https://github.com/google/eslint-config-google.
 
 ```sh
 $ npm i -D eslint @typescript-eslint/{eslint-plugin,parser,eslint-plugin-tslint}
-```
+$ yarn add --dev eslint @typescript-eslint/{eslint-plugin,parser,eslint-plugin-tslint}
 
-```sh
-$ npx tslint-to-eslint-config --prettier
+yarn add --dev eslint eslint-config-google
 ```
-
-Installer ensuite les modules indiqués après `... new packages are required for this ESLint configuration.`.
 
 == Ressources & Inspiration
 
