@@ -116,10 +116,20 @@ image::doc/img/phpstorm-settings-eslint.png[]
 
 === Deploiement sur GitHub Page
 
+```sh
+$ git checkout --orphan gh-pages
+$ git rm -rf .
+$ touch README.adoc
+$ git add README.adoc
+$ git commit -m "orphan"
+```
+
 ==== Installation
 
 ```sh
 $ yarn add --dev angular-cli-ghpages
+$ ng add angular-cli-ghpages
+$ ng deploy --base-href=/angular-tdd/
 ```
 
 ==== Deploiement
