@@ -42,11 +42,22 @@ image:https://img.shields.io/github/license/jprivet-dev/angular-tdd[GitHub]
 
 toc::[]
 
-== L'installation (mémento)
+== Présentation
+
+Ce projet *Angular TDD* est un atelier où je concentre, teste et partage des cas pratiques (projets clients, R&D, ...)
+autour des *tests automatiques*, du *TDD* (Test-Driven Development) et du framework *Angular*.
+
+*Les titres de la doc sont tagués* de la façon suivante :
+
+. [ ] A faire
+. [!] En cours
+. [x] Fait
+
+{BACK_TO_TOP}
+
+== Installations & Déploiement (mémento)
 
 === Installer Node.js et NPM (Linux)
-
-Voir https://medium.com/@shivraj.jadhav82/nodejs-and-npm-setup-on-linux-mint-19-696023d50247.
 
 Vérifier les versions :
 
@@ -62,11 +73,15 @@ $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 
+{BACK_TO_TOP}
+
 === Mettre à jour NPM
 
 ```sh
 $ npm install npm@latest -g
 ```
+
+{BACK_TO_TOP}
 
 === Installer Angular CLI
 
@@ -74,6 +89,8 @@ $ npm install npm@latest -g
 $ npm install -g @angular/cli
 $ ng --version
 ```
+
+{BACK_TO_TOP}
 
 === Installer Yarn (Linux)
 
@@ -84,57 +101,73 @@ $ sudo apt-get update && sudo apt-get install yarn
 $ yarn -v
 ```
 
-=== Créer un projet (à la racine)
+{BACK_TO_TOP}
 
-Générez votre projet :
+=== Créer un projet Angular (à la racine)
 
-```sh
-$ ng new app --prefix app --defaults --directory ./
-```
+Générer son projet : +
+`$ ng new app --prefix app --defaults --directory ./`
 
-Et lancez le serveur dans la foulée :
+Lancer le serveur : +
+`$ ng serve`
 
-```sh
-$ ng serve
-```
+Puis aller sur http://localhost:4200/
 
-Puis allez sur http://localhost:4200/
+CAUTION: Si l'on souhaite créer un projet à la racine, il ne faut pas qu'un fichier `README.md` existe déjà, sinon le message d'erreur suivant s'affiche : `ERROR! README.md already exists.`
 
-CAUTION: Si vous souhaitez créer un projet à la racine, il ne faut pas qu'un fichier `README.md` y existe déjà, sinon vous aurez le message d'erreur suivant : `ERROR! README.md already exists.`
+{BACK_TO_TOP}
 
 === Linter & ESLint
 
-==== Installation
+==== Installer ESLint
 
 ```sh
 $ yarn add --dev eslint eslint-config-google @typescript-eslint/parser
 ```
 
-==== PHPStorm : configuration
+{BACK_TO_TOP}
+
+==== Configurer PHPStorm
 
 image::doc/img/phpstorm-settings-eslint.png[]
 
-=== Deploiement sur GitHub Page
+{BACK_TO_TOP}
+
+=== Deployer sur GitHub Page
+
+==== Créer un branche `gh-pages`
 
 ```sh
 $ git checkout --orphan gh-pages
 $ git rm -rf .
-$ touch README.adoc
-$ git add README.adoc
-$ git commit -m "orphan"
+$ git commit --allow-empty -m "empty"
+$ git push origin gh-pages
 ```
 
-==== Installation
+{BACK_TO_TOP}
+
+==== Installer `angular-cli-ghpages`
 
 ```sh
 $ yarn add --dev angular-cli-ghpages
 $ ng add angular-cli-ghpages
+```
+
+{BACK_TO_TOP}
+
+==== Déployer sur la branche `gh-pages` sur GitHub Pages
+
+```sh
 $ ng deploy --base-href=/angular-tdd/
 ```
 
-==== Deploiement
+{BACK_TO_TOP}
 
 == Ressources & Inspiration
+
+=== Node & NPM
+
+* https://medium.com/@shivraj.jadhav82/nodejs-and-npm-setup-on-linux-mint-19-696023d50247
 
 === Yarn
 
