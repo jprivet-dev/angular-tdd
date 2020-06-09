@@ -102,27 +102,25 @@ Puis allez sur http://localhost:4200/
 
 CAUTION: Si vous souhaitez créer un projet à la racine, il ne faut pas qu'un fichier `README.md` y existe déjà, sinon vous aurez le message d'erreur suivant : `ERROR! README.md already exists.`
 
-=== TSLint & ESLint
+=== Linter & ESLint
 
-Voir *Roadmap: TSLint -> ESLint* (https://github.com/palantir/tslint/issues/4534)
-
-```sh
-$ npm install eslint -g
-```
-
-=== Installer ESLint
-
-Voir https://medium.com/create-code/migrate-angular-8-from-tslint-to-eslint-4b0c44c8ae38 :
-Voir aussi https://github.com/google/eslint-config-google.
+==== Installation
 
 ```sh
-$ npm i -D eslint @typescript-eslint/{eslint-plugin,parser,eslint-plugin-tslint}
-$ yarn add --dev eslint @typescript-eslint/{eslint-plugin,parser,eslint-plugin-tslint}
-
-yarn add --dev eslint eslint-config-google
+$ yarn add --dev eslint eslint-config-google @typescript-eslint/{eslint-plugin,parser}
 ```
+
+==== PHPStorm : configuration
+
+image::doc/img/phpstorm-settings-eslint.png[]
 
 == Ressources & Inspiration
+
+=== TSLint & ESLint
+
+* *Roadmap: TSLint -> ESLint* : https://github.com/palantir/tslint/issues/4534
+* https://medium.com/create-code/migrate-angular-8-from-tslint-to-eslint-4b0c44c8ae38
+* https://github.com/google/eslint-config-google
 
 === Badges
 
