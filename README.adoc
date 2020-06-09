@@ -77,8 +77,6 @@ $ ng --version
 
 === Installer Yarn (Linux)
 
-https://classic.yarnpkg.com/en/docs/install#debian-stable :
-
 ```sh
 $ curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -116,13 +114,32 @@ $ yarn add --dev eslint eslint-config-google @typescript-eslint/parser
 
 image::doc/img/phpstorm-settings-eslint.png[]
 
+=== Deploiement sur GitHub Page
+
+==== Installation
+
+```sh
+$ yarn add --dev angular-cli-ghpages
+```
+
+==== Deploiement
+
 == Ressources & Inspiration
+
+=== Yarn
+
+* https://classic.yarnpkg.com/en/docs/install#debian-stable
 
 === TSLint & ESLint
 
 * *Roadmap: TSLint -> ESLint* : https://github.com/palantir/tslint/issues/4534
 * https://medium.com/create-code/migrate-angular-8-from-tslint-to-eslint-4b0c44c8ae38
 * https://github.com/google/eslint-config-google
+
+=== Deploiement
+
+* https://github.com/angular-schule/angular-cli-ghpages
+* https://www.npmjs.com/package/angular-cli-ghpages
 
 === Badges
 
