@@ -9,5 +9,6 @@ export class InheritRootComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.debug('InheritRootComponent | ngOnInit()');
   }
 }
