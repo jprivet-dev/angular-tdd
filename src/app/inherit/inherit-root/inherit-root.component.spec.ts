@@ -8,9 +8,9 @@ describe('InheritRootComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InheritRootComponent ]
+      declarations: [ InheritRootComponent ],
     })
-    .compileComponents();
+        .compileComponents();
   }));
 
   beforeEach(() => {
