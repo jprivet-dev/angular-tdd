@@ -163,6 +163,15 @@ $ ng deploy --base-href=/angular-tdd/
 
 {BACK_TO_TOP}
 
+== Angular CLI (mémento)
+
+=== Générer un nouveau composant
+
+```sh
+$ ng g c <name> --style=scss
+$ ng g c <folder>/<name> --style=scss
+```
+
 == Ressources & Inspiration
 
 === Node & NPM
